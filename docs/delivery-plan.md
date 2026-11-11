@@ -46,7 +46,9 @@ Status on 2026-11-11:
 - **REST API surface per Server version: partly answered.** Server 2019 supports api-version 5.0, 2020 supports 6.0, 2022 supports 7.0. The work item and pull request endpoints needed for v0.1 exist at 5.0. About half the endpoints, mostly the v0.2 deployment ones, were not read. See [the findings](research/02-rest-api-surface-per-server-version.md).
 - **Authentication options on Server: resolved.** Server offers personal access tokens and Windows authentication only. Entra identities are Services only. No read-only token scope is published for pipeline environments, which matters for v0.2. See [the findings](research/03-authentication-options-on-server.md).
 - **Name availability: resolved, and the working name is not usable as is.** The NuGet id `Flowline` belongs to an active .NET tool for Dynamics 365 and Power Apps, and a GitHub organisation of that name exists. Flowgauge, Flowtally, Deliverylens and Flowcompass looked clear. Trademarks and domains were not checked. See [the findings](research/06-name-availability.md).
-- **DORA metric wording: still open and unverified.**
+- **DORA metric wording: partly answered.** The five metrics and their grouping are confirmed, and recovery time now sits under throughput. DORA is silent on the commit timestamp, the deployment definition, the failure window, the recovery clock start and mean versus median, so Flowline must decide each. Primary sources for the flow metric definitions were blocked and remain unread. See [the findings](research/05-dora-metric-wording.md).
+
+Two research tickets stay open with partial answers, REST API surface and DORA metric wording, because the pages they still need were blocked from the research environment. They need a session with wider network access, or a person reading the listed pages.
 
 None of this was tested against a live server. Vendor sites and parts of Microsoft's documentation were blocked from the research environment, and each findings file lists what it could not verify.
 
