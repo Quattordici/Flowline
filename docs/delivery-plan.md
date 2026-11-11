@@ -44,7 +44,8 @@ Status on 2026-11-11:
 - **Analytics and OData on Azure DevOps Server: resolved.** Analytics exists on every version but is optional or can be switched off on Server, the released OData versions cover work tracking only, and pipeline data is preview only. It cannot be the only data path. See [the findings](research/01-analytics-odata-on-server.md).
 - **Landscape gaps: resolved, with a finding that changes the pitch.** Apache DevLake merged Azure DevOps Server support in August 2026, so issue 8985 is no longer evidence of a gap. DevLake's plugin does not cover Azure Boards work items. What remains open is the combination of open source, Server, work item flow metrics and PI reporting in a small deployment. The brief and the pitch need rewording before they are used again. See [the findings](research/04-landscape-gaps.md).
 - **REST API surface per Server version: partly answered.** Server 2019 supports api-version 5.0, 2020 supports 6.0, 2022 supports 7.0. The work item and pull request endpoints needed for v0.1 exist at 5.0. About half the endpoints, mostly the v0.2 deployment ones, were not read. See [the findings](research/02-rest-api-surface-per-server-version.md).
-- **Authentication, DORA metric wording, name availability: still open and unverified.**
+- **Authentication options on Server: resolved.** Server offers personal access tokens and Windows authentication only. Entra identities are Services only. No read-only token scope is published for pipeline environments, which matters for v0.2. See [the findings](research/03-authentication-options-on-server.md).
+- **DORA metric wording, name availability: still open and unverified.**
 
 None of this was tested against a live server. Vendor sites and parts of Microsoft's documentation were blocked from the research environment, and each findings file lists what it could not verify.
 
