@@ -39,7 +39,14 @@ Research tickets. None needs a decision from you. Findings go to `docs/research/
 
 One task ticket sits beside them and needs you: **Reference environment and test instances**. It records which Server version and update you run, whether Analytics is on, how iterations are structured, whether deployments are classic releases or YAML environments, and which instances can be tested against.
 
-As of this draft, every item above is still unverified. The research tickets are open.
+Status on 2026-11-11:
+
+- **Analytics and OData on Azure DevOps Server: resolved.** Analytics exists on every version but is optional or can be switched off on Server, the released OData versions cover work tracking only, and pipeline data is preview only. It cannot be the only data path. See [the findings](research/01-analytics-odata-on-server.md).
+- **Landscape gaps: resolved, with a finding that changes the pitch.** Apache DevLake merged Azure DevOps Server support in August 2026, so issue 8985 is no longer evidence of a gap. DevLake's plugin does not cover Azure Boards work items. What remains open is the combination of open source, Server, work item flow metrics and PI reporting in a small deployment. The brief and the pitch need rewording before they are used again. See [the findings](research/04-landscape-gaps.md).
+- **REST API surface per Server version: partly answered.** Server 2019 supports api-version 5.0, 2020 supports 6.0, 2022 supports 7.0. The work item and pull request endpoints needed for v0.1 exist at 5.0. About half the endpoints, mostly the v0.2 deployment ones, were not read. See [the findings](research/02-rest-api-surface-per-server-version.md).
+- **Authentication, DORA metric wording, name availability: still open and unverified.**
+
+None of this was tested against a live server. Vendor sites and parts of Microsoft's documentation were blocked from the research environment, and each findings file lists what it could not verify.
 
 ## Stage 1: decisions and definitions
 
@@ -91,7 +98,7 @@ Individual developer scoring or ranking, which is a design principle and not a d
 
 ## Risks to the plan itself
 
-- **The gap may have closed.** If DevLake now supports Server, or Microsoft ships DORA natively, the first Stage 1 ticket may answer "narrow" or "stop". That is why it is first.
+- **The gap has narrowed.** DevLake now supports Server for pipelines and code, so DORA metrics on Server are no longer a differentiator on their own. Work item flow metrics and PI reporting carry more of the case than the brief assumed, which is an argument for the v0.1 scope as recommended and a reason the ticket "Does the differentiation hold" comes first.
 - **One reference environment.** Designing against one team's Server risks baking in its conventions. The mapping configuration and the second-team criterion in v0.4 are the counterweight.
 - **Definitions without data.** A definition written before any real data may miss the edge cases that matter. Expect the flow definitions to be revised once after v0.1 first runs, and plan for that revision instead of treating it as failure.
 - **Demand is not quantified.** Nothing in the research shows how many organizations want this.

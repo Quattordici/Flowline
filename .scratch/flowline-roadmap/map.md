@@ -32,6 +32,9 @@ This map plans. It does not build. Reaching for code is the signal that the map'
 
 <!-- one line per resolved ticket: gist, then the link -->
 
+- [Analytics and OData on Azure DevOps Server](issues/01-analytics-odata-on-server.md): present on every version but optional or switchable on Server, and pipeline data is preview only, so it cannot be the only data path.
+- [Landscape gaps](issues/04-landscape-gaps.md): DevLake added Server support in August 2026, so the gap is now the combination of open source, Server, work item flow metrics and PI reporting, not Server support alone.
+
 ## Not yet specified
 
 - **Program Increment and iteration model (v0.3).** How PIs are represented when Azure DevOps only knows iteration paths, how team membership by period is captured, and whether PI reporting belongs in the core or as a layer on top of a general flow-metrics core. Waits on the event model and on seeing how the reference environment actually structures its iteration tree.
