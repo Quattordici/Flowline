@@ -1,5 +1,7 @@
 # Flowline delivery plan
 
+> Name decided on 2026-11-11: the project will be called **Flowcompass**. This document and the repository still use the working name Flowline until the repository is renamed.
+
 Status: draft for review, 2026-11-10. Planning only. Nothing here is built, and nothing here is a script or a pipeline definition.
 
 This plan was charted with the wayfinder method: a map of decision tickets that are resolved one at a time until the way to building is clear. The map is [`.scratch/flowline-roadmap/map.md`](../.scratch/flowline-roadmap/map.md) and the tickets are in [`.scratch/flowline-roadmap/issues/`](../.scratch/flowline-roadmap/issues/). This document is the readable summary. Where the two differ, the map and its tickets win.
@@ -59,7 +61,7 @@ Each of these is a conversation with you, one ticket per session. The recommende
 | Order | Ticket | Gates |
 |---|---|---|
 | 1 | Does the differentiation hold | Everything. A go, narrow, contribute or stop answer |
-| 2 | Name | Solution scaffold |
+| 2 | Name (decided: Flowcompass) | Solution scaffold |
 | 3 | Data access path | Event model, sync design |
 | 4 | Minimum supported Server version and test strategy | v0.1 scope |
 | 5 | Event model and glossary | Every metric definition |
