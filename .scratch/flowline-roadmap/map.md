@@ -35,6 +35,7 @@ This map plans. It does not build. Reaching for code is the signal that the map'
 - [Analytics and OData on Azure DevOps Server](issues/01-analytics-odata-on-server.md): present on every version but optional or switchable on Server, and pipeline data is preview only, so it cannot be the only data path.
 - [Landscape gaps](issues/04-landscape-gaps.md): DevLake added Server support in August 2026, so the gap is now the combination of open source, Server, work item flow metrics and PI reporting, not Server support alone.
 - [Authentication options on Server](issues/03-authentication-options-on-server.md): Server offers personal access tokens and Windows authentication only; Entra identities are Services only; no read-only scope is published for pipeline environments.
+- [Name availability](issues/06-name-availability.md): the NuGet id Flowline belongs to an active .NET tool in the Microsoft ecosystem, so the working name cannot be the package prefix; four alternatives looked clear.
 
 ## Not yet specified
 
