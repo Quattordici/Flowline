@@ -80,6 +80,18 @@ Storage, UI and the two research-free tickets are unblocked today and can be tak
 
 Every metric definition follows one template: definition, inputs, assumptions, edge cases, what would make it wrong or misleading, how to test it, and a worked example on a synthetic event timeline. The worked examples later become the golden-file tests.
 
+### DORA choices already made
+
+DORA leaves five things to the implementer. These were decided on 2026-11-11 and are fixed inputs to the two DORA tickets, which stay open for the full definitions and worked examples.
+
+| Choice | Decision |
+|---|---|
+| Start of change lead time | First commit of the pull request, with the pull request as the unit of change. Shown as first commit to merge, and merge to production |
+| What counts as a deployment | Successful completion of a stage or environment mapped as production. Failed attempts do not count |
+| What counts as a failed deployment | An incident marker (configured work item type or tag) attributed to the latest production deployment before it. A pipeline heuristic is an optional preset |
+| Recovery clock | Failed deployment finished to fixing deployment finished. Incident created to resolved is shown beside it when records exist |
+| Statistic | Median plus 85th percentile, never the mean |
+
 ## Milestones
 
 Scope per milestone is taken from the brief. The gates are the tickets that must be resolved before that milestone's code starts.
