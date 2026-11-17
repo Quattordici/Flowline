@@ -37,6 +37,7 @@ This map plans. It does not build. Reaching for code is the signal that the map'
 - [Authentication options on Server](issues/03-authentication-options-on-server.md): Server offers personal access tokens and Windows authentication only; Entra identities are Services only; no read-only scope is published for pipeline environments.
 - [Name availability](issues/06-name-availability.md): the NuGet id Flowline belongs to an active .NET tool in the Microsoft ecosystem, so the working name cannot be the package prefix; four alternatives looked clear.
 - [Name](issues/20-name.md): the project is named Flowcompass, with `Flowcompass.*` as namespace and NuGet prefix; trademarks and domains still unchecked.
+- [What counts as a deployment, production, a failure and an incident](issues/14-deployment-production-failure-incident.md): a deployment is a successful production-mapped stage; an incident is an Azure DevOps work item matching a marker, ServiceNow is not read; attribution is by link, then a three-day window.
 
 ## Not yet specified
 

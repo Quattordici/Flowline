@@ -71,7 +71,7 @@ Each of these is a conversation with you, one ticket per session. The recommende
 | 9 | Storage support matrix | v0.1 |
 | 10 | UI approach | v0.1 |
 | 11 | v0.1 scope and exit criteria | Start of building |
-| 12 | What counts as a deployment, production, a failure and an incident | v0.2 |
+| 12 | What counts as a deployment, production, a failure and an incident (decided, see [the rules](definitions/deployment-and-failure-rules.md)) | v0.2 |
 | 13 | The five DORA metric definitions | v0.2 |
 | 14 | Services and the second connector | v1.0 |
 | 15 | License | First outside contribution, v1.0 at the latest |
