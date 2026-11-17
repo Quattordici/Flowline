@@ -4,6 +4,8 @@ Label: wayfinder:map
 
 Tickets live in [`issues/`](issues/). A readable summary with the recommendation and milestone gates is in [`docs/delivery-plan.md`](../../docs/delivery-plan.md).
 
+**Status: shelved on 2026-11-17.** See [Does the differentiation hold](issues/08-does-the-differentiation-hold.md) for why and for what would reopen it. All other tickets stay as they are, so work can resume from this map.
+
 ## Destination
 
 A build-ready plan for Flowline: every decision that gates code is made and written down, so that building v0.1 can start with nothing left to decide, and each later milestone (v0.2, v0.3, v0.4, v1.0) has its gating decisions either made or named. Concretely that means verified facts about Azure DevOps Server, a written definition for every metric in the next milestone, and settled answers for data access path, minimum Server version, name, license, UI, storage and authentication.
@@ -38,6 +40,7 @@ This map plans. It does not build. Reaching for code is the signal that the map'
 - [Name availability](issues/06-name-availability.md): the NuGet id Flowline belongs to an active .NET tool in the Microsoft ecosystem, so the working name cannot be the package prefix; four alternatives looked clear.
 - [Name](issues/20-name.md): the project is named Flowcompass, with `Flowcompass.*` as namespace and NuGet prefix; trademarks and domains still unchecked.
 - [What counts as a deployment, production, a failure and an incident](issues/14-deployment-production-failure-incident.md): a deployment is a successful production-mapped stage; an incident is an Azure DevOps work item matching a marker, ServiceNow is not read; attribution is by link, then a three-day window.
+- [Does the differentiation hold](issues/08-does-the-differentiation-hold.md): shelve for now. DevLake covers DORA on Server and the organization already uses Nooga Scale for PI and flow reporting; the open lead is end-to-end lead time from work item to production.
 
 ## Not yet specified
 

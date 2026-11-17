@@ -1,5 +1,7 @@
 # Flowline delivery plan
 
+> **Shelved on 2026-11-17.** The differentiation did not hold strongly enough for the first audience, Mattias's own release train. Apache DevLake now covers DORA on Azure DevOps Server, and the organization already uses Nooga Scale for PI and flow reporting. The most promising lead if the project is picked up again is end-to-end lead time from Boards work item through pull request to production, which neither tool appears to join. Full reasoning and reopen conditions: [Does the differentiation hold](../.scratch/flowline-roadmap/issues/08-does-the-differentiation-hold.md). The rest of this plan is kept unchanged as the starting point.
+
 > Name decided on 2026-11-11: the project will be called **Flowcompass**. This document and the repository still use the working name Flowline until the repository is renamed.
 
 Status: draft for review, 2026-11-10. Planning only. Nothing here is built, and nothing here is a script or a pipeline definition.
